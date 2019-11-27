@@ -29,6 +29,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:gravity="center"
+                    android:textSize="20sp"
                     android:text="@string/team_a" />
 
                 <TextView
@@ -36,6 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:textSize="60sp"
                     android:text="0" />
 
                 <Button
@@ -73,6 +75,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:layout_marginBottom="16dp"
+                    android:textSize="20sp"
                     android:text="@string/team_b" />
 
                 <TextView
@@ -80,6 +83,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:textSize="60sp"
                     android:text="@string/_0" />
 
                 <Button
