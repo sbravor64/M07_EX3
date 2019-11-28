@@ -33,35 +33,49 @@
                     android:text="@string/team_a" />
 
                 <TextView
-                    android:id="@+id/textView_point1"
+                    android:id="@+id/textView_point_teamA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textSize="60sp"
                     android:text="0" />
 
-                <Button
-                    android:id="@+id/button3"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/_3_points" />
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/_2_points" />
+                    <Button
+                        android:id="@+id/button_point_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="+ 3 Points" />
 
-                <Button
-                    android:id="@+id/button5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/free_throw" />
+                    <Button
+                        android:id="@+id/button_point_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="+ 2 Points" />
+
+                    <Button
+                        android:id="@+id/button_free"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Free throw" />
+                </LinearLayout>
+
             </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="380dp"
+                android:background="@android:color/darker_gray"/>
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -79,44 +93,65 @@
                     android:text="@string/team_b" />
 
                 <TextView
-                    android:id="@+id/textView_point2"
+                    android:id="@+id/textView_point_teamB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textSize="60sp"
                     android:text="@string/_0" />
 
-                <Button
-                    android:id="@+id/button6"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginTop="24dp"
-                    android:text="@string/_3_points" />
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/button7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/_2_points" />
+                    <Button
+                        android:id="@+id/button_point_3_teamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="24dp"
+                        android:text="+ 3 Points" />
 
-                <Button
-                    android:id="@+id/button8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/free_throw" />
+                    <Button
+                        android:id="@+id/button_point_2_teamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="+ 2 Points" />
+
+                    <Button
+                        android:id="@+id/button_free_teamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="FREE THROW" />
+                </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_reset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
         android:layout_marginBottom="32dp"
         android:layout_alignParentBottom="true"
         android:text="@string/reset" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:layout_marginTop="50sp"
+        app:srcCompat="@drawable/basketball2" />
 </RelativeLayout>
